@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="" onsubmit="return vali()">
+
+        <!-- UserID :input[0] -->
+        <div>User ID : <input type="text" required></div>
+        <p class="Error"></p>
+
+        <!-- Password :input[1] -->
+        <div>Password : <input type="password"></div>
+        <p class="Error"></p>
+
+        <!--Name :input[2] -->
+        <div>Name :  <input type="text"></div>
+        <p class="Error"></p>
+
+        <!-- Address :input[3] -->
+        <div>Address :  <input type="text"></div>
+        <p class="Error"></p>
+
+        <!-- :input[4] -->
+        <div>Country : <input list="country" placeholder="Please Select Country" >
+        <datalist id="country">
+            <option value="India"></option>
+            <option value="USA"></option>
+            <option value="UK"></option>
+            <option value="Dubai"></option>
+            <option value="Canada"></option>
+            <option value="Mexico"></option>
+            <option value="Italy"></option>
+        </datalist>
+        </div>
+        <p class="Error"></p>
+
+        <!-- ZIP Code :input[5] -->
+        <div>ZIP Code :  <input type="number"></div>
+        <p class="Error"></p>
+
+        <!--Email :input[6] -->
+        <div>Email :  <input type="email"></div>
+        <p class="Error"></p>
+
+        <!--Sex :input[7,8] -->
+        <div>Sex :  <input type="radio" name="gender">
+        <label for="">Male</label>
+        <input type="radio" name="gender">
+        <label for="">Female</label></div>
+        <p class="Error"></p>
+
+        <!--Language :input[9,10] -->
+        <div>Language :  <input type="checkbox">
+        <label for="">English</label>
+        <input type="checkbox">
+        <label for="">Non-English</label></div>
+        <p class="Error"></p>
+
+        <!--About :input[11] -->
+        <div>About :  <input type="text" class="about"></div>
+        <p class="Error"></p>
+
+        <!--Submit :input[12] -->
+        <div><input type="submit" value="SUBMIT" class="sub"></div>
+        <p class="Error"></p>
+
+    </form>
+    <script src="scr.js"></script>
+</body>
+</html>
+
